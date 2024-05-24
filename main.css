@@ -1,0 +1,137 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+section {
+background-color: #707070;
+}
+
+header {
+    background-color: rgba(6, 49, 189, 0.726);
+}
+
+.container {
+    max-width: 2000px;
+    width:100%
+}
+
+.container header nav ul{
+    font-family: "Roboto", sans-serif;
+    font-weight: 100;
+    font-style: normal;
+}
+
+header h1 {
+    font-family: "Bungee Inline", sans-serif;
+    font-weight: 100;
+    font-style: normal;
+}
+
+header nav li {
+    display: inline;
+    margin-left: 20px;
+    font-size: 16px;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.search-bar input[type="search"] {
+    width: 600px;
+    height: 40px;
+    padding: 5px 10px;
+    margin-right: 10px;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    background-color: #e2e6f0;
+    color: #333;
+}
+
+header button[type="menu"] {
+    width: 60px;
+    height: 30px;
+    padding: 5px 10px;
+    margin right: 10px;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    background-color: #a2b6ec;
+    color: #333;
+}
+
+header ul li button:hover {
+    background-color: #465d9ce5;
+}
+
+section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+section .image-container {
+    position: relative;
+    width: 100%;
+    max width: 300px;
+    height: 300px;
+    overflow:hidden;
+}
+
+section .image-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0.7;
+    position: relative;
+}
+
+section .image-container::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 50%;
+    height: 100%;
+    background: linear-gradient(to right,rgba(0,0,0,0) 0%, rgba(0,0,0,0) 50%, rgba(0,0,0,0.5) 100%);
+}
+
+section .image-container .text-overlay, .text-overlay2{
+    position: absolute;
+    top: 50px;
+    left: 130px;
+    transform: translate(-50%, -50%);
+    color:white;
+    font-size: 30px;
+    font-weight: bold;
+    text-align: left;
+    padding: 10px 20px;
+    background-color:rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+    transform-origin: left;
+}
+
+section .image-container .text-overlay2 {
+    top: 150px;
+    left: 530px;
+    font-size: 23px;
+    font-weight: 400;
+    text-align: left;
+}
+
+section a {
+    background-color: #e2e6f0;
+    text-decoration: none;
+    color:rgba(0, 0, 0, 0.904);
+    border-radius: 5px;
+}
+
+footer {
+    background-color: #182C61;
+    color: #ecf0f3;
+    padding: 16px 0;
+}
